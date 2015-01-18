@@ -11,6 +11,7 @@
 - `$ ./gradlew test`: run tests
 - `$ ./gradlew build`: builds the project
 - `$ java -jar build/libs/semantic-api-0.1.0.jar`: runs the server
+- `$ ./gradlew clean build && java -jar build/libs/semantic-api-0.1.0.jar`: everything above in one line
 
 Point your browser to [http://localhost:8080/](http://localhost:8080/) to get api home page. Home page shows you that path for people feed is /people and to get it point you browser to [http://localhost:8080/people](http://localhost:8080/people). It is navigable api(HATEOAS based) built around the concept of filters and mixins. On each response you get what are the other options, filters and mixins available on this resource.
 
