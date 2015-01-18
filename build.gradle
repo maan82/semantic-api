@@ -1,0 +1,41 @@
+buildscript {
+    repositories {
+        maven { url "https://repo.spring.io/libs-release" }
+        mavenLocal()
+        mavenCentral()
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.1.10.RELEASE")
+        classpath("org.openrdf.sesame:sesame-runtime:2.7.9")
+        classpath("org.apache.jena:jena-arq:2.12.1")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'eclipse'
+apply plugin: 'idea'
+apply plugin: 'spring-boot'
+
+jar {
+    baseName = 'semantic-api'
+    version =  '0.1.0'
+}
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url "https://repo.spring.io/libs-release" }
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web")
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.openrdf.sesame:sesame-runtime:2.7.9")
+    compile("org.apache.jena:jena-arq:2.12.1")
+    testCompile "org.mockito:mockito-all:1.10.19"
+    testCompile "junit:junit:4.10"
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '1.12'
+}
