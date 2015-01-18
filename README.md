@@ -16,5 +16,5 @@ Point your browser to [http://localhost:8080/](http://localhost:8080/) to get ap
 
 ##Examples
 - How old is Tony Blair ?  point your browser to [http://localhost:8080/people?name=Tony Blair&mixin=age](http://localhost:8080/people?name=Tony Blair&mixin=age)
-- Where was David Cameron born ?  point your browser to [http://localhost:8080?name=David Cameron&mixin=birth_place](http://localhost:8080/peoplename=David Cameron&mixin=birth_place)
+- Where was David Cameron born ?  point your browser to [http://localhost:8080/people?name=David Cameron&mixin=birth_place](http://localhost:8080/people?name=David Cameron&mixin=birth_place)
 - Where was David Cameron born and how old is he ?  point your browser to [http://localhost:8080?name=David Cameron&mixin=birth_place&mixin=age](http://localhost:8080/peoplename=David Cameron&mixin=birth_place&mixin=age)
