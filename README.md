@@ -1,10 +1,12 @@
  README
 ========
+##About
+API to explore people data on DBpedia.
 
 ## Requisites
 - Java
 - Gradle
-- Preferred IDE/Text editor
+- Preferred IDE/Text editor. I used Intellij
 - Internet connection
 
 ## Basic commands
