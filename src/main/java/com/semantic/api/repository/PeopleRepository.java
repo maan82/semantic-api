@@ -1,23 +1,13 @@
 package com.semantic.api.repository;
 
 import com.semantic.api.domain.FeedItem;
-import com.semantic.api.domain.Person;
 import com.semantic.api.domain.ResultList;
 import com.semantic.api.specification.PeopleFeedSpecification;
-import org.apache.commons.lang3.StringUtils;
-import org.openrdf.model.Literal;
-import org.openrdf.model.ValueFactory;
-import org.openrdf.query.*;
+import org.openrdf.query.TupleQuery;
+import org.openrdf.query.TupleQueryResult;
 import org.openrdf.repository.RepositoryConnection;
-import org.openrdf.repository.RepositoryException;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Repository;
-
-import javax.xml.datatype.DatatypeConfigurationException;
-import javax.xml.datatype.DatatypeFactory;
-import javax.xml.datatype.Duration;
-import javax.xml.datatype.XMLGregorianCalendar;
 
 @Repository
 public class PeopleRepository extends DBPediaRepository {
