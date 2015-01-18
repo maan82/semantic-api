@@ -32,8 +32,8 @@ dependencies {
     compile("org.openrdf.sesame:sesame-runtime:2.7.9")
     compile("org.apache.commons:commons-lang3:3.3.2")
     compile("org.apache.httpcomponents:httpclient:4.3.6")
-    testCompile "org.mockito:mockito-all:1.10.19"
-    testCompile "junit:junit:4.10"
+    testCompile("org.mockito:mockito-all:1.10.19")
+    testCompile("junit:junit:4.10")
 }
 
 task wrapper(type: Wrapper) {

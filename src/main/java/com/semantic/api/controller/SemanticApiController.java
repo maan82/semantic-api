@@ -1,6 +1,7 @@
 package com.semantic.api.controller;
 
 import com.semantic.api.domain.Feed;
+import com.semantic.api.domain.FrontPage;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -17,11 +18,11 @@ public class SemanticApiController {
 
     @RequestMapping(method= RequestMethod.GET)
     public @ResponseBody
-    List<Feed> getFeeds() {
+    FrontPage getFeeds() {
         ArrayList<Feed> greetings = new ArrayList<Feed>();
-        greetings.add(new Feed(counter.incrementAndGet(), "People", "/people"));
+        greetings.add(new Feed(counter.incrementAndGet(), "People", "Start here for list of people", "/people"));
 
-        return greetings;
+        return new FrontPage(greetings);
     }
 
 }
